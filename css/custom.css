@@ -1,0 +1,105 @@
+body {
+    background-color: beige;
+    color: black;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 5px solid darkgrey;
+    background-color: lightblue;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-link {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-button {
+    background-color: darkblue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.link-group {
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.link-group a {
+    display: block;
+    padding: 8px;
+    color: darkblue;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 5px solid darkgrey;
+    background-color: white;
+}
+
+.column1 {
+    background-color: floralwhite;
+}
+
+.column2 {
+    background-color: aliceblue;
+}
+
+.column3 {
+    background-color: lavender;
+}
+
+.action-link {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.gallery-box {
+    max-width: 700px;
+}
+
+.carousel-image {
+    width: 100%;
+    max-width: 900px;
+    border: 5px solid darkgrey;
+    background-color: white;
+}
+
+.carousel-button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    padding: 20px;
+    border: 5px solid darkgrey;
+    background-color: floralwhite;
+}

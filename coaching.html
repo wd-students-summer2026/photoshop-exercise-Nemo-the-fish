@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    <title>Coaching | Zimo Ski Coaching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+    <link rel="stylesheet" href="css/custom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="text-3xl font-bold text-[#174ea6]">Coaching Programs</h1>
+            </header>
+            <nav x-data="{open: false}">
+                <div class="nav-row">
+                    <a href="professional_site.html" class="brand-link">
+                        Zimo Ski Coaching
+                    </a>
+                    <button @click="open = !open" class="md:hidden menu-button">
+                        menu
+                    </button>
+                </div>
+
+                <div :class="open? 'block' : 'hidden'"  class="link-group md:flex">
+                    <a href="coaching.html">Coaching</a>
+                    <a href="gallery.html">Gallery</a>
+                </div> 
+            </nav>
+            <main class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <section class="column1">
+                    <h2>Beginner Lessons</h2>
+                    <p>
+                        This lesson is for first-time skiers or skiers who are still learning basic control. It covers balance, stopping, turning, and using lifts safely.
+                    </p>
+                    <p><strong>$90 per session</strong></p>
+                </section>
+                <section class="column2">
+                    <h2>Intermediate Lesson</h2>
+                    <p>
+                    This lesson is for skiers who can already ski green and easier blue trails. It focuses on smoother parallel turns and better speed control.
+                    </p>
+                    <p><strong>$110 per session</strong></p>
+                </section>
+                 <section class="column3">
+                    <h2>Carving Lesson</h2>
+                    <p>
+                    This lesson is for skiers who want to improve edge control, body position, and cleaner turns on groomed trails.
+                    </p>
+                     <p><strong>$130 per session</strong></p>
+                 </section>
+            </main>
+            <footer>
+                <p>Zimo Coaching Page</p>
+            </footer>
+        </div>
+    </body>
+</html>

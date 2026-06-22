@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <title>Gallery | Zimo Ski Coaching</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-3xl font-bold text-[#174ea6]">Ski Gallery</h1>
+        </header>
+
+        <nav x-data="{ open: false }">
+            <div class="nav-row">
+                <a href="professional_site.html" class="brand-link">
+                    Zimo Ski Coaching
+                </a>
+
+                <button @click="open = !open" class="md:hidden menu-button">
+                    Menu
+                </button>
+            </div>
+
+            <div :class="open ? 'block' : 'hidden'" class="link-group md:flex">
+                <a href="coaching.html">Coaching</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </nav>
+        <main>
+            <section x-data="{ images: ['ski1.svg', 'ski2.svg', 'ski3.svg'], current: 0 }" class="gallery-box">
+                <h2>Training Photos</h2>
+                <p>
+                    Click the buttons below to vie different ski coaching images.
+                </p>
+                <img :src="images[current]" alt="ski coaching image" class="carousel-image" />
+                <p>
+                    <button @click="current = current === 0 ? images.length - 1 : current - 1" class="carousel-button">
+                    Previous
+                    </button>
+                    <button @click="current = current === images.length - 1 ? 0 : current + 1" class="carousel-button bg-[#174ea6]">
+                    Next  
+                    </button>
+                </p>
+            </section> 
+        </main>
+        <footer>
+            <p>Zimo Fang Gallery Page</p>  
+        </footer>
+    </div>
+</body>
+</html>
